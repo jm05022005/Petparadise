@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Pet Website</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-fluid {
+        width: 100%;
+        height: 80px;
+        background-color:red;
+    }
+
+    .container {
+        width: 1200px;
+        height: 80px;
+        background-color: grey;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 25px;
+    }
+
+    .container h2 {
+        font-family: arial;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .container p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container ul li {
+        font-family: arial;
+        color: #fff;
+        list-style: none;
+        margin-right: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .container ul li:first-child {
+        color: #30d300;
+    }
+
+    .container ul li:hover {
+        color: #30d300;
+    }
+
+    .container .btn {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 18px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        color: #30d300;
+        transition: 0.5s;
+    }
+
+    .container .btn:hover {
+        background-color: #30d300;
+        color: #fff;
+    }
+
+    .content {
+        width: 1200px;
+        height: 100vh;
+        background-color: grey;
+        margin: auto;
+    }
+
+    .content h3 {
+        font-family: arial;
+        font-weight: bold;
+        color: #fff;
+        font-size: 50px;
+        padding-top: 100px;
+    }
+
+    .content p {
+        font-family: arial;
+        font-weight: bold;
+        font-size:#000;
+        line-height: 30px;
+        padding-top: 30px;
+    }
+
+    .content .btn {
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 18px;
+        border: 2px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        color: #fff;
+        transition: 0.5s;
+        margin-top: 30px;
+    }
+
+    .content .btn:hover {
+        background-color: #fff;
+        color: #30d300;
+    }
+
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h2>Pet Paradise</h2>
+            <b>
+                <a class="active" href="1.html">HOME</a>
+                <a href="2.html">ABOUT US</a>
+                <a href="jm1.html">PRODUCTS</a>
+                <a href="jm2.html">CONTACT US</a>
+            </b>
+            <button class="btn">
+                <ion-icon name="call-outline"></ion-icon>
+                (0926) 057-4297
+            </button>
+        </div>
+        <div class="content">
+            <h3>Our Services</h3>
+            <p>Have questions or want to book a service? Reach out to us!</p>
+            <form>
+                <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Send">
+            </form>
+            <button class="btn">Learn More
+            </button>
+            <p>Location: San Carlos, ALiaga, N.E.</>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
